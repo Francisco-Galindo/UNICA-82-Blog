@@ -1,0 +1,29 @@
+{
+  "name": "blog-backend",
+  "version": "0.0.0",
+  "description": "Backend del blog para proyecto de desarrollo web UNICA",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "db:generate": "npx prisma generate",
+    "db:push": "npx prisma db push"
+  },
+  "keywords": [
+    "blog",
+    "proyecto",
+    "unica"
+  ],
+  "author": "Patricio Alfaro, Francisco Galindo, Luis Eduardo Pérez",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "prisma": "^4.13.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.13.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
